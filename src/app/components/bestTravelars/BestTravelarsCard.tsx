@@ -13,7 +13,7 @@ export default function BestTravelarsCard({ imageUrl, profileImage, name, work }
       <div className=" -mt-5 flex justify-center">
         <Image src={profileImage} alt="profile Image" />
       </div>
-      <p className="pt-2 text-center text-[24px] font-semibold text-primary">{name}</p>
+      <p className="pt-2 text-center text-2xl font-semibold leading-none text-primary">{name}</p>
       <p className="pt-2 text-center text-base font-medium text-[#AEB5BF]">{work}</p>
     </div>
   );

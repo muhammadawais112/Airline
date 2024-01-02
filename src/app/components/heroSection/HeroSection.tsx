@@ -4,7 +4,7 @@ import plane from "@/images/plane.png";
 import Image from "next/image";
 import { BOOKNOW, TABS } from "@/app/constant/CommonData";
 export default function HeroSection() {
-  const [selectedTab, setSelectedTab] = useState("economy");
+  const [selectedTab, setSelectedTab] = useState("Economy");
   const handleTabClick = (tab: string) => {
     setSelectedTab(tab);
   };
@@ -27,11 +27,12 @@ export default function HeroSection() {
       </div>
       <div className=" mx-[auto] mt-5 max-w-[1200px]">
         <div>
-          <div className="flex h-[60px] w-full rounded-tl-[30px] rounded-tr-[30px] bg-white md:w-[519px]">
+          <div className="flex h-[60px] w-full cursor-pointer rounded-tl-[30px] rounded-tr-[30px] bg-white md:w-[519px]">
             {TABS.map((item, index) => {
               return (
                 <div
-                  className={` flex h-[60px] w-[173px]  items-center justify-center text-lg font-bold leading-7	 text-black first-of-type:rounded-tl-[30px] last-of-type:rounded-tr-[30px] ${
+                  key={index}
+                  className={`flex h-[60px] w-[173px]  items-center justify-center text-lg font-bold leading-7	 text-black first-of-type:rounded-tl-[30px] last-of-type:rounded-tr-[30px] ${
                     selectedTab == item?.text ? "bg-sky text-white  " : ""
                   }`}
                   onClick={() => handleTabClick(item.text)}>

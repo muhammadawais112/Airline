@@ -10,10 +10,10 @@ export default function Memories() {
         {/* TODO: use map loop here */}
         {MEMORIES.map((item, index) => {
           return (
-            <div className=" odd:flex-shrink-0 even:items-center flex">
-            <div className="w-full  max-w-[262.5px]">
-              <Image src={item.imageUrl} alt="Memory Image" />
-            </div>
+            <div className="flex odd:flex-shrink-0 even:items-center" key={index}>
+              <div className="w-full  max-w-[262.5px]">
+                <Image src={item.imageUrl} alt="Memory Image" />
+              </div>
             </div>
           );
         })}
