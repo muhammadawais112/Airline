@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+// TODO: USE SCSS
 
 
 @font-face {
@@ -14,10 +15,12 @@
   @apply mx-auto max-w-[1200px] px-5 py-20 xl:px-0
 }
 
+// TODO: use kebab-case
 .paddingVertical {
   @apply md:pt-[100px] pt-[50px]
 }
 
+// TOOD: change name to section-heading
 .heading-center {
   @apply text-[#011736] text-[40px] leading-[150%] tracking-[0.6px] capitalize font-bold text-center
 }

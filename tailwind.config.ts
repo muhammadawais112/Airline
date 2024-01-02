@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        'Montserrat': ['Montserrat'],
+        Montserrat: ["Montserrat"],
       },
     },
   },
@@ -22,10 +22,7 @@ const config: Config = {
           secondary: "#313EF7",
           neutral: "#000000",
         },
-
       },
- 
-
     ],
     darkTheme: "dark", // name of one of the included themes for dark mode
     base: true, // applies background color and foreground color for root element by default
@@ -37,7 +34,5 @@ const config: Config = {
   },
   plugins: [require("daisyui")],
   darkMode: ["class", '[data-theme="dark"]'],
-
 };
 export default config;
-

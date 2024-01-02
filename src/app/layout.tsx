@@ -3,6 +3,11 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import "swiper/css";
 
+// TODO: FIX ALL TERMINAL ERRORS
+// TODO: USE PRETTIER
+// TODO: USE SCSS
+
+
 
 export const metadata: Metadata = {
   title: 'Create Next App',

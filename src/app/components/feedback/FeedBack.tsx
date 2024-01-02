@@ -40,6 +40,7 @@ export default function FeedBack() {
                             <FeedBackCard />
                         </SwiperSlide>
                     </Swiper>
+                    {/* TODO: use daisy ui button here, also these are not working */}
                     <div className='flex  justify-center gap-4'>
                         <button ref={prevRef} className='h-[50px] w-[50px] bg-[#313EF7]  flex  justify-center items-center rounded-full'><Image src={previousArrow} alt='nextArrow' /></button>
                         <button ref={nextRef} className='  h-[50px] w-[50px] bg-[#313EF7]  flex  justify-center items-center rounded-full'><Image src={nextArrow} alt='nextArrow' /></button>

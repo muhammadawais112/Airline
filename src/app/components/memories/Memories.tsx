@@ -10,6 +10,7 @@ export default function Memories() {
         <div className='container mt-[40px] md:mt-[0px]'>
             <div className='heading-center '>Make memories with us</div>
             <div className=" grid  md:grid-cols-2 lg:grid-cols-4  justify-center gap-[50px] h-[auto] lg:h-[540px] pt-[40px] ">
+                {/* TODO: use map loop here */}
                 <div className='max-w-[262.5px]  w-full flex-shrink-0'>
                     <Image src={MemoryFirst} alt='MemoryFirst' />
                 </div>
