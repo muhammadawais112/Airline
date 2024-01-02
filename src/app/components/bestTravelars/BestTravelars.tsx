@@ -5,8 +5,8 @@ export default function BestTravelars() {
   return (
     <>
       <div className="container">
-        <div className="heading-center">Best travelars of this month</div>
-        <div className="pt-[40px] grid  md:grid-cols-2 lg:grid-cols-4  justify-center gap-[24px]">
+        <div className="section-heading">Best travelars of this month</div>
+        <div className="pt-10 grid  md:grid-cols-2 lg:grid-cols-4  justify-center gap-6">
           {CLIENT.map((item: any) => {
             return (
               <BestTravelarsCard

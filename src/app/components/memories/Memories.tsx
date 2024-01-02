@@ -1,29 +1,23 @@
-import React from 'react'
-import Image from 'next/image'
-import MemoryFirst from "@/images/memory-first.png";
-import MemorySecond from "@/images/memory-second.png"
-import MemoryThird from "@/images/memory-third.png"
-import MemoryFourth from "@/images/memory-fourth.png"
+import React from "react";
+import Image from "next/image";
+import { MEMORIES } from "@/app/constant/CommonData";
 
 export default function Memories() {
-    return (
-        <div className='container mt-[40px] md:mt-[0px]'>
-            <div className='heading-center '>Make memories with us</div>
-            <div className=" grid  md:grid-cols-2 lg:grid-cols-4  justify-center gap-[50px] h-[auto] lg:h-[540px] pt-[40px] ">
-                {/* TODO: use map loop here */}
-                <div className='max-w-[262.5px]  w-full flex-shrink-0'>
-                    <Image src={MemoryFirst} alt='MemoryFirst' />
-                </div>
-                <div className='max-w-[262.5px]  w-full flex  items-center'>
-                    <Image src={MemorySecond} alt='MemoryFirst' />
-                </div>
-                <div className='max-w-[262.5px]  w-full flex-shrink-0'>
-                    <Image src={MemoryThird} alt='MemoryFirst' />
-                </div>
-                <div className='max-w-[262.5px]  w-full flex  items-center'>
-                    <Image src={MemoryFourth} alt='MemoryFirst' />
-                </div>
+  return (
+    <div className="container mt-10 md:mt-[0px]">
+      <div className="section-heading ">Make memories with us</div>
+      <div className=" grid  h-[auto] justify-center    gap-[50px] pt-10 md:grid-cols-2 lg:h-[540px] lg:grid-cols-4 ">
+        {/* TODO: use map loop here */}
+        {MEMORIES.map((item, index) => {
+          return (
+            <div className=" odd:flex-shrink-0 even:items-center flex">
+            <div className="w-full  max-w-[262.5px]">
+              <Image src={item.imageUrl} alt="Memory Image" />
             </div>
-        </div>
-    )
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
 }

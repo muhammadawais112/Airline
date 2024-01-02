@@ -1,20 +1,20 @@
-import React from 'react'
-import Image from 'next/image'
+import React from "react";
+import Image from "next/image";
 interface BestTravelsCardProps {
-    imageUrl: string,
-    profileImage: string,
-    name: string,
-    work: string
+  imageUrl: string;
+  profileImage: string;
+  name: string;
+  work: string;
 }
 export default function BestTravelarsCard({ imageUrl, profileImage, name, work }: BestTravelsCardProps) {
-    return (
-        <div className=' w-full md:max-w-[282px] h-[420px]  rounded-[213px] bg-[white] shadow  pb-[40px] shadow-travel'>
-            <Image src={imageUrl} alt='Travel Image' />
-            <div className=' flex justify-center mt-[-20px]'>
-                <Image src={profileImage} alt='profile Image' />
-            </div>
-            <p className='text-center pt-[8px] text-[#011736] text-[24px] font-semibold'>{name}</p>
-            <p className='text-center pt-[8px] text-[#AEB5BF] text-[16px] font-medium	'>{work}</p>
-        </div>
-    )
+  return (
+    <div className=" shadow-travel h-[420px] w-full  rounded-[213px] bg-white pb-10  shadow md:max-w-[282px]">
+      <Image src={imageUrl} alt="Travel Image" />
+      <div className=" -mt-5 flex justify-center">
+        <Image src={profileImage} alt="profile Image" />
+      </div>
+      <p className="pt-2 text-center text-[24px] font-semibold text-primary">{name}</p>
+      <p className="pt-2 text-center text-base font-medium text-[#AEB5BF]">{work}</p>
+    </div>
+  );
 }

@@ -13,6 +13,11 @@ const config: Config = {
         Montserrat: ["Montserrat"],
       },
     },
+    colors: {
+      sky:"#313EF7",
+      white:"#ffffff",
+      black:"#030522"
+    }
   },
   daisyui: {
     themes: [
@@ -20,7 +25,9 @@ const config: Config = {
         light: {
           primary: "#030522",
           secondary: "#313EF7",
-          neutral: "#000000",
+          neutral: "#030522",
+        
+     
         },
       },
     ],
