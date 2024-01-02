@@ -8,7 +8,7 @@ export default function FeedBackCard() {
       <div className="flex">
         <Image src={feedBackProfile} alt="feedBackProfile" />
         <div className="flex-col  pl-4">
-          <p className="text-[20px] font-semibold  text-primary ">Jaylon Vaccaro</p>
+          <p className="text-xl	leading-none font-semibold  text-primary ">Jaylon Vaccaro</p>
           <Image src={feedBackStar} alt="feedBackStar" />
         </div>
       </div>

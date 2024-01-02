@@ -5,7 +5,7 @@ import Image from "next/image";
 import { LETFLY } from "@/app/constant/CommonData";
 export default function LetFly() {
   return (
-    <div className="paddingVertical grid grid-cols-1 gap-[52px] md:grid-cols-2">
+    <div className="padding-vertical grid grid-cols-1 gap-[52px] md:grid-cols-2">
       <div className="flex justify-center">
         <Image src={Booking} alt="Feature Image" />
       </div>

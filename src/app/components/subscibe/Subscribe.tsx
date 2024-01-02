@@ -4,7 +4,7 @@ export default function Subscribe() {
   return (
     <div className="bg-[#313ef70d]">
       <div className="container">
-        <div className="section-heading paddingVertical">
+        <div className="section-heading padding-vertical">
           Subscribe Newsletter & <br /> get letest news
         </div>
         <div className="block  justify-center pt-10 md:flex ">

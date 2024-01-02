@@ -12,7 +12,7 @@ export default function FeedBack() {
   const nextRef = useRef(null);
   return (
     <div className="container ">
-      <p className="text-center text-[20px] font-semibold leading-[24px] text-[#313EF7]">What’s our customer saying</p>
+      <p className="text-center text-xl	  font-semibold leading-6 text-[#313EF7]">What’s our customer saying</p>
       <div className="section-heading ">Our Customer Feedback</div>
       <div className="grid grid-cols-1  gap-[21px] pt-[60px]     md:grid-cols-2">
         <div className="w-full xl:w-[700px]">

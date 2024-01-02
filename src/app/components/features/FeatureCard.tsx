@@ -14,7 +14,7 @@ export default function FeatureCard({ imageUrl, name }: FeaturesCardProps) {
           <Image src={imageUrl} alt="features Images" />
         </div>
       </div>
-      <p className="pt-6 text-center text-[24px] font-extrabold text-black	">{name}</p>
+      <p className="pt-6 text-center text-2xl leading-none font-extrabold text-black	">{name}</p>
       <p className="pt-[10px] text-center	 text-base leading-6	 text-[#030522a6]">
         Suspendisse ultrices nibh non cursus sagittis. Morbi dictum consequat ex, quis finibus magna.
       </p>
